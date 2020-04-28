@@ -11,8 +11,20 @@ public class Employee {
 	private int empid;
 	private String empname;
 	private String gender;
-	
-	
+	private String designation;
+		
+
+	@Override
+	public String toString() {
+		return "Employee [empid=" + empid + ", empname=" + empname + ", gender=" + gender + ", designation="
+				+ designation + "]";
+	}
+	public String getDesignation() {
+		return designation;
+	}
+	public void setDesignation(String designation) {
+		this.designation = designation;
+	}
 	public String getGender() {
 		return gender;
 	}
@@ -31,12 +43,8 @@ public class Employee {
 	public void setEmpname(String empname) {
 		this.empname = empname;
 	}
+
 	
-	@Override
-	public String toString() {
-		return "Employee [empid=" + empid + ", empname=" + empname + ", gender=" + gender + "]";
-	}
-		
 	
 
 }
